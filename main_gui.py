@@ -1,8 +1,8 @@
 import tkinter as tk
 from tkinter import filedialog, messagebox
 
-from crypto.encrypt import encrypt_data
-from crypto.decrypt import decrypt_data
+from crypto.__encrypt import encrypt_data
+from crypto.__decrypt import decrypt_data
 from utils.file_io import read_file, write_file
 
 # === Function GUI ===

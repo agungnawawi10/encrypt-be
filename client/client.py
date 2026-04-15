@@ -11,4 +11,7 @@ async def send_message():
             message = await asyncio.to_thread(input, "Ketik pesan: ")
             await websocket.send(message)
 
+            # response = await websocket.recv()
+            # print(f"[RECEIVED] {response}")
+
 asyncio.run(send_message())
