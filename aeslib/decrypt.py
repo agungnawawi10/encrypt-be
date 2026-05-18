@@ -2,7 +2,10 @@
 from Crypto.Cipher import AES
 import base64
 
-KEY = b"1234567890123456"
+from aeslib.env_loader import get_aes_key
+
+KEY = get_aes_key()
+
 
 def decrypt(encoded_text):
     data = base64.b64decode(encoded_text)
